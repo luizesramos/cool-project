@@ -1,0 +1,19 @@
+{
+  "name": "cool-project",
+  "version": "1.0.0",
+  "description": "Jasmine demo project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "tsc && node bin/index.js",
+    "test": "jasmine-ts \"spec/**/*.spec.ts\""
+  },
+  "author": "Luiz Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine-ts": "^0.2.1",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6"
+  }
+}
