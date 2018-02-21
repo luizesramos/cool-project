@@ -2,6 +2,7 @@ import * as slowApi from '../networking/SlowApi';
 
 export async function greetUserPromise(userName: string): Promise<string> {
     console.log('greetUserPromise starting...');
+
     return Promise.all([
         slowApi.fetchGreeting(),
         slowApi.fetchQuestion()

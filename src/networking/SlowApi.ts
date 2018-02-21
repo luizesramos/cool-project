@@ -1,4 +1,4 @@
-const NETWORK_LATENCY_IN_MILLIS = 2000;
+const NETWORK_LATENCY_IN_MILLIS = 6000;
 
 export async function fetchGreeting(): Promise<string> {
     return new Promise<string>((resolve, reject) => {

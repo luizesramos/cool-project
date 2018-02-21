@@ -87,7 +87,7 @@ it('matchers for undefined and null', () => {
     expect(a.address).toEqual(null);
 });
 
-xit('matchers for contains', () => {
+it('matchers for contains', () => {
     const a = ['Tests', 'are', 'your', 'friends'];
     const b = 'Tests are your friends';
     const c = { subject: 'Tests', verb: 'are', noun: 'your friends'};
@@ -98,7 +98,7 @@ xit('matchers for contains', () => {
     expect(b).toContain('are');
     expect(b).not.toContain('enemies');
 
-    expect(c).toContain('are');
+    expect(c).toContain(jasmine.objectContaining({verb: 'are'}));
     expect(c).not.toContain('enemies');
 });
 
