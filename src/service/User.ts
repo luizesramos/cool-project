@@ -10,7 +10,9 @@ export async function greetUserPromise(userName: string): Promise<string> {
         const message = buildMessage(results[0], userName, results[1]);
         console.log('greetUserPromise finishing');
         return Promise.resolve(message);
-    })
+    }).catch(err => {
+        return Promise.reject(err);
+    });
 }
 
 export async function greetUserAsyncAwait(userName: string): Promise<string> {

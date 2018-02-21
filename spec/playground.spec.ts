@@ -98,8 +98,8 @@ it('matchers for contains', () => {
     expect(b).toContain('are');
     expect(b).not.toContain('enemies');
 
-    expect(c).toContain(jasmine.objectContaining({verb: 'are'}));
-    expect(c).not.toContain('enemies');
+    expect(b).toEqual(jasmine.arrayContaining(['your', 'are']));
+    expect(c).toEqual(jasmine.objectContaining({verb: 'are'}));
 });
 
 
